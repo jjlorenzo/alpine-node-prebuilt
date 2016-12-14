@@ -17,9 +17,11 @@ Build the docker image and run against master, in most scenarios you would proba
 do this by providing the release tag to the build:
 
 ```
+cd node-sass
 docker build --tag "alpine-node-prebuilt/node-sass" .
 docker run --interactive --rm --tty --volume ${PWD}:/build alpine-node-prebuilt/node-sass build
 docker run --interactive --rm --tty --volume ${PWD}:/build alpine-node-prebuilt/node-sass build v3.13.0
+docker run --interactive --rm --tty --volume ${PWD}:/build alpine-node-prebuilt/node-sass build v3.13.1
 ```
 
 This will leave the compiled artifact in the mounted volume ($PWD in the example above).

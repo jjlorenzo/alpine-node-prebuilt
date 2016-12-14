@@ -6,6 +6,7 @@ case ${1} in
     echo "Building branch $BRANCH"
     mkdir -p "/build/$BRANCH"
     cd node-sass
+    git pull
     git checkout "$BRANCH"
     git submodule update --init --recursive
     npm install
