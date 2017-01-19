@@ -1,6 +1,6 @@
 # Based on build script found here
 # https://github.com/sass/node-sass#rebuilding-binaries
-FROM alpine:3.4
+FROM alpine:3.5
 
 RUN set -ex && apk add --no-cache \
   build-base \
